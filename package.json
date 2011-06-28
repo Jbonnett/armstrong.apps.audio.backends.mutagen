@@ -1,0 +1,5 @@
+{
+    "name": "armstrong.apps.audio.backends.mutagen",
+    "version": "0.1.0.alpha.0",
+    "description": "Generic backend system to use throughout Armstrong"
+}
