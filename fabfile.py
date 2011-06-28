@@ -1,5 +1,6 @@
 from armstrong.dev.tasks import *
 
+full_name = "armstrong.apps.audio.backends.mutagen"
 settings = {
     'DEBUG': True,
     'INSTALLED_APPS': (
@@ -11,8 +12,8 @@ settings = {
         'armstrong.core.arm_content',
         'armstrong.core.arm_content.tests.arm_content_support',
         'armstrong.core.arm_sections',
-        'armstrong.apps.audio.backends.mutagen'
         'armstrong.utils.backends',
+        full_name,
         'south',
         'mptt',
     ),
@@ -24,7 +25,7 @@ settings = {
 
 }
 
-full_name = "armstrong.apps.audio.backends.mutagen"
+
 main_app = "arm_content"
-tested_apps = (full_name)
+tested_apps = ("arm_content_support", "arm_content",)
 pip_install_first = True
