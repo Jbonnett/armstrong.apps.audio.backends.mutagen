@@ -1,1 +1,1 @@
-armstrong.core.arm_content>=0.3.0
+
