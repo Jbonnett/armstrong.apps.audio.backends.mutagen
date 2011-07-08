@@ -1,12 +1,12 @@
 from django.core.exceptions import ImproperlyConfigured
 
-from armstrong.apps.audio.backends import AudioBackend 
 
 FT_TRANSLATIONS={
     'vorbis':'oga',
     
     }
-class MutagenBackend(AudioBackend):
+
+class MutagenBackend():
     def filetype(self, file):
         
         ftype=self.load(file).mime[0].replace('audio/','')
