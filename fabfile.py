@@ -1,7 +1,8 @@
 import unittest
-from fabric.decorators import task
+from fabric.decorators import *
+from armstrong.apps.audio.backends.mutagen.tests import MutagenTestCase
 
 @task 
 def test():
-    from armstrong.apps.audio.backends.mutagen.tests import * 
-    unittest.main()
+    suite = unittest.TestLoader().loadTestsFromTestCase(MutagenTestCase)
+    unittest.TextTestRunner(verbosity=2).run(suite)
