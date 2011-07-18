@@ -1,2 +1,3 @@
 -r ./base.txt
 fudge
+fabric=>1.2
